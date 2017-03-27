@@ -1,0 +1,68 @@
+#examples .text{
+    margin: 30px auto;
+    width: 500px;
+    border: solid 1px red;
+    text-align: center;
+}
+#examples .text span{
+    font-family: "Microsoft YaHei",Arial,"Times New Roman","Microsoft YaHei",Helvetica, Tahoma, "Hiragino Sans GB", "Hiragino Sans GB W3",STXihei, STHeiti, Heiti, SimSun, sans-serif;
+    font-size: 20px;
+}
+#examples .products{
+    margin: 30px 0;
+}
+#examples .products div{
+    display:inline-block;
+    position: relative;
+    width: 20%;
+    height: 300px;
+    margin: 0 75px;
+    border: solid 1px red;
+    text-align: center;
+}
+#examples .products div img{
+    display: block;
+    width: 80%;
+    height: 200px;
+    border: solid 1px green;
+    margin: 0 auto;
+    padding: 0;
+}
+#examples .products .zhongjian{
+    top:15px;
+}
+#examples .products div span,
+#examples .products div pre{
+    display: inline-block;
+    height: 50px;
+    width: 80%;
+    /*line-height: 50px;*/
+    top: 0;
+    left: 0;
+    border: solid 1px yellow;
+    margin: 0;
+    padding: 0;
+
+}
+#examples .detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 48%;
+    margin-top: 100px;
+}
+#examples .detail div{
+
+    width: 48%;
+    height: 300px;
+    border: solid 1px red;
+}
+#examples .detail pre{
+    display: block;
+    width: 45%;
+    height: 160px;
+    margin: 0 auto;
+    border: solid 1px yellow;
+    font-size: 16px;
+    font-family: "Microsoft YaHei", Arial, "Times New Roman", "Microsoft YaHei", Helvetica, Tahoma, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+}

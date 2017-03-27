@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" >
+    <title>棋牌游戏</title>
+
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <link href="../basecss/basecss.css" rel="stylesheet">
+
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/view1.css" rel="stylesheet">
+    <link href="css/view2.css" rel="stylesheet">
+    <link href="css/view3.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="index_wraper">
+
+    <!--跑马字符-->
+    <div class="broadcast">
+        <i class="broadcastIcon"></i>
+        <div class="wrapper">
+            <a href="#"><marquee>滚动的文字滚动的文字滚动的文字滚动的文字</marquee></a>
+        </div>
+        <b class="close"></b>
+    </div>
+    <!--轮播图-->
+    <header>
+        <div ng-controller="appCtrl">
+            <div id="headerSlider" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" ng-repeat="banner in bannerList">
+                        <img ng-src='{{banner.src}}'>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="chessMain">
+        <nav>
+            <ul class="nav_ul">
+                <li auto-focus>
+                    <a href="#/chessGame" data-toggle="item">
+                        <b class="iconfont icon-gameIcon"></b>
+                        棋牌游戏
+                    </a>
+                </li>
+                <li auto-focus>
+                    <a href="#/saishiActivity" data-toggle="item">
+                        <b class="iconfont icon-saishiIcon"></b>
+                        赛事活动
+                    </a>
+                </li>
+                <li auto-focus>
+                    <a href="#/vip" data-toggle="item">
+                        <b class="iconfont icon-vipIcon"></b> 会员
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div ng-view></div>
+    </div>
+</div>
+<div id="loginVip">
+    <div class="content">
+        <i></i>
+        <p>你还尚未登陆</p>
+        <p>请登录后查看会员详情</p>
+        <a id="login">登录</a>
+    </div>
+</div>
+<div id="scrollTop">回到顶部</div>
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.min.js"></script>
+<script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/auto-focus.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+    window.onload=function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction:"horizontal",/*横向滑动*/
+            loop: true,
+            //如果需要分页器
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true//修改swiper的父元素时，自动初始化swiper
+        });
+        var loginVip=document.getElementById('loginVip');
+        document.getElementById('login').onclick=function () {
+            loginVip.style.display='none';
+        }
+    }
+</script>
+
+</body>
+</html>

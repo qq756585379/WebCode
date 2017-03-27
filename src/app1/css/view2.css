@@ -1,0 +1,63 @@
+.saishiActivity{
+    background-color: white;
+}
+.saishiActivity .title{
+    display: inline-block;
+    margin: 0.1rem 0.2rem;
+}
+
+/*.saishiActivity .swiper-container2{*/
+    /*height: 1.04rem;*/
+    /*margin-bottom: 0.1rem;*/
+/*}*/
+/*.saishiActivity .swiper-slide2{*/
+    /*width: 3.4rem;*/
+    /*margin-right: 0.1rem;*/
+    /*background: #aaa;*/
+    /*position: relative;*/
+/*}*/
+
+.saishiActivity ul li{
+    position: relative;
+    width: 100%;
+}
+.saishiActivity > ul > li >img{
+    width: 100%;
+}
+.saishiActivity .runIcon{
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    width: 0.85rem;
+    height: 0.34rem;
+    background: url("../images/runIcon.png") no-repeat;
+    background-size: 0.85rem 0.34rem;
+    -moz-background-size:0.85rem 0.34rem;
+    -webkit-background-size:0.85rem 0.34rem;
+}
+.saishiActivity .rightIcon{
+    position: absolute;
+    top: 0.1rem;
+    right: 0;
+    width: 0.59rem;
+    height: 0.62rem;
+    background: url("../images/guanfangIcon.png") no-repeat;
+    background-size: 0.59rem 0.62rem;
+    -moz-background-size: 0.59rem 0.62rem;
+    -webkit-background-size: 0.59rem 0.62rem;
+}
+.saishiActivity>ul>li{
+    margin-top: 0.1rem;
+    padding: 0.1rem 0;
+    border-top: 1px dashed #e6e6e6;
+
+    /*background:url(../images/libg.jpg) no-repeat top center;*/
+    /*background-size: 6.60rem 1px;*/
+    /*-moz-background-size:6.60rem 1px;*/
+    /*-webkit-background-size:6.60rem 1px;*/
+
+    position: relative;
+    height: 2.70rem;
+    overflow:hidden;
+}
+

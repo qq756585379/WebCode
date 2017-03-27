@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="mainController">
+<head>
+    <meta charset="UTF-8">
+    <title>企业官网</title>
+
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <link href="../basecss/basecss.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/introduction.css" rel="stylesheet">
+    <link href="css/examples.css" rel="stylesheet">
+    <link href="css/joinus.css" rel="stylesheet">
+    <link href="css/contactus.css" rel="stylesheet">
+</head>
+<body >
+
+<div id="wraper">
+
+    <header>
+        <div style="width: 1200px;margin: 0 auto;position: relative">
+            <div class="logo">
+                <h1 style="height: 100%">
+                    <a href="#" title="企业网站">
+                        <img src="" alt="">
+                    </a>
+                </h1>
+            </div>
+            <div class="logo_text">
+                <a href="#">可以啊</a>
+            </div>
+            <ul>
+                <li auto-focus><a href="#!/index">首页</a></li>
+                <li auto-focus><a href="#!/introduction">公司介绍</a></li>
+                <li auto-focus><a href="#!/examples">案例展示</a></li>
+                <li auto-focus><a href="#!/joinus">加入我们</a></li>
+                <li auto-focus><a href="#!/contactus">联系我们</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="content" ng-view></div>
+    <footer>
+        <div style="width: 1200px;margin: 0 auto;position: relative">
+            <div class="message">
+                <span>联系客服</span>
+                <br>
+                <div class="wu">
+                    <span>吴先生</span>
+                    <br>
+                    <span>手机：1234567890</span>
+                    <br>
+                    <span>QQ：1234567890</span>
+                </div>
+                <div class="yi">
+                    <span>易先生</span>
+                    <br>
+                    <span>手机：1234567890</span>
+                    <br>
+                    <span>QQ：1234567890</span>
+                </div>
+                <br>
+                <span>企业邮箱：111111@sina.com</span>
+                <br>
+                <span>企业电话：866766768</span>
+                <br>
+                <span>邮政：234567</span>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="location">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+
+</body>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/auto-focus.js"></script>
+<script src="./js/index/controller.js"></script>
+<script src="./js/introduction/controller.js"></script>
+<script src="./js/examples/controller.js"></script>
+<script src="./js/joinus/controller.js"></script>
+<script src="./js/contactus/controller.js"></script>
+
+</html>

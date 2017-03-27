@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*跑马灯*/
+#index_wraper .broadcast{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: #303030;
+    font-size: 0.12rem;
+    color: #f1f1f1;
+    padding-left: 0.2rem;
+}
+#index_wraper .swiper-pagination-bullet-active{
+    background: #007B06;
+}
+.broadcast .broadcastIcon{
+    display: inline-block;
+    width: 0.21rem;
+    height: 0.19rem;
+    float: left;
+    background: url("../images/broadcastIcon.png") no-repeat;
+    background-size:0.21rem 0.19rem ;
+    -moz-background-size:0.21rem 0.19rem;
+    -webkit-background-size:0.21rem 0.19rem;
+    margin-right: 0.12rem;
+    position: relative;
+    top: 50%;
+    margin-top: -0.1rem;
+}
+.broadcast .close{
+    display: inline-block;
+    float: right;
+    width: 0.28rem;
+    height: 0.28rem;
+    background: url("../images/closeIcon.png") no-repeat;
+    background-size:0.28rem 0.28rem ;
+    -moz-background-size:0.28rem 0.28rem;
+    -webkit-background-size:0.28rem 0.28rem;
+    position:relative;
+    top: 50%;
+    margin-top: -0.14rem;
+    right: 0.2rem;
+}
+.broadcast .wrapper {
+    font-size: 0.12rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 5.89rem;
+    background: transparent;
+    float: left;
+    color: #fff
+}
+.wrapper a{
+    width: 1000px;
+    overflow: hidden;
+    color:#fff;
+    font-size: 12px;
+}
+
+/*轮播图*/
+#index_wraper header{
+    width: 100%;
+    background: #ccc;
+    height:4.0rem;
+    position: relative;
+}
+#index_wraper .swiper-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#index_wraper .swiper-container .swiper-slide img{
+    width: 100%;
+}
+
+/*棋牌频道nav*/
+.chessMain{
+    position: relative;
+    margin: -0.1rem 0.1rem;
+    font-size: 0.2rem;
+    z-index:9;
+}
+.chessMain>nav{
+    background: #fff;
+}
+.chessMain .nav_ul > li{
+    font-size:0.3rem;
+    float: left;
+    width: 33%;
+    text-align: center;
+    background: url("../images/navLiBg.png") no-repeat right center;
+}
+.chessMain .nav_ul > li:last-child{
+    background: none;
+}
+.chessMain .nav_ul > li > a{
+    display: inline-block;
+    padding-top: 0.3rem;
+    padding-bottom: 0.26rem;
+}
+.chessMain .nav_ul .active{
+    border-bottom: 2px solid #6fb92c;
+    color: #6fb92c;
+}
+.chessMain .nav_ul .active >a {
+    color: #6fb92c;
+}
+.chessMain .nav_ul > li > a > b{
+    display: block;
+    margin-bottom: 0.1rem;
+}
+
+/*回到顶部*/
+#scrollTop{
+    width: 0.84rem;
+    height: 0.84rem;
+    position:fixed;
+    right: 0.4rem;
+    bottom:0.4rem;
+    background: url("../images/topIcon.png") no-repeat;
+    background-size: 0.84rem 0.84rem;
+    -moz-background-size:0.84rem 0.84rem;
+    -webkit-background-size:0.84rem 0.84rem;
+    cursor:pointer;
+    display: none;
+    text-indent: -9999px;
+    z-index:9;
+}
+
+
+/*登陆vip*/
+#loginVip{
+    /*display: none;*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    background: rgba(0,0,0,0.8);
+    top:0;
+}
+#loginVip>.content{
+    position: relative;
+    top:50%;
+    margin: -3.5rem 0.38rem 0;
+    height: 7.0rem;
+    background: #fff;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    padding: 0.88rem 0 0.34rem 0;
+}
+#loginVip>.content>i{
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 4.74rem;
+    height: 3.56rem;
+    background: url("../images/loginLogin.png") no-repeat;
+    background-size: 4.74rem 3.46rem;
+    -moz-background-size:4.74rem 3.46rem;
+    -webkit-background-size:4.74rem 3.46rem;
+}
+#loginVip>.content p{
+    text-align: center;
+    color: #474747;
+    font-size: 0.24rem;
+}
+#loginVip>.content>a{
+    width: 1.90rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: inline-block;
+    border-radius: 0.3rem;
+    border:1px solid #6fb92c;
+    font-size: 0.24rem;
+    color: #6fb92c;
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+* {margin: 0;padding: 0;}
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+body {
+    font-size: 62.5%;
+    background: #f1f1f1;
+    word-wrap: break-word;
+    color: #333;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+html,body{width: 100%; height:100%; position: relative;}
+ul,li,dl,dt,dd,span,del,b,font,label,ol,div{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+img{border:0; display:block; max-width:100%;}
+em,i,s{ font-style:normal;}
+a{ text-decoration:none; color:#333; outline:none;}
+a:hover{ cursor:pointer}
+
+.fl{float: left}
+.fr{float: right}
+.none { display: none; }
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}

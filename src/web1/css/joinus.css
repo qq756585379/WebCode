@@ -1,0 +1,58 @@
+#joinus .ocupation{
+    width: 80%;
+    margin: 50px auto;
+}
+
+#joinus .ocupation li{
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #000000;
+}
+.hidden{
+    display: none;
+}
+.show{display: block}
+
+#joinus .ocupation li .dt{
+    height: 98px;
+    line-height: 98px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: 50px;
+}
+#joinus .ocupation li .dt a{
+    float: right;
+    padding-right: 20px;
+}
+#joinus .ocupation li .dd{
+    display: block;
+    padding: 20px 50px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#joinus #down{
+    display: inline-block;
+    border: solid 1px red;
+    height: 50px;
+    width: 50px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+#joinus .ocupation li .down{
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 20px;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*line-height: 60px;*/
+    /*border: solid 1px red;*/
+    vertical-align: middle;
+    font-size: 50px;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	/* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg);
+
+}

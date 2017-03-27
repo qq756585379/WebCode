@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="detail">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" >
+    <title>棋牌详情</title>
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <link href="../basecss/basecss.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+</head>
+<body ng-controller="detailCtrl">
+
+
+<div id="detail_wraper">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="banner in bannerList1111">
+                <img ng-src="{{banner.src}}">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="chessDetails">
+        <section class="clearfix">
+            <i></i>
+            <h2>咪咕斗地主</h2>
+            <p>版本：<span>1.0</span>  |  下载量：<span>980万</span></p>
+        </section>
+        <section>
+            <h2>游戏介绍</h2>
+            <div class="introduction">
+                斗地主是一款最初流行湖北三人游戏，两个农民联合对抗一名地主，由于其规则简单、娱乐性强，迅速风靡全国。"地主是一款最初流行湖北三人游戏，两个农民联合对矿一名地主，由于其规则简单、娱乐性强，迅速风靡全国。"斗地主是一款最初流行湖北三人游戏，两个农民联合...
+                斗地主是一款最初流行湖北三人游戏，两个农民联合对抗一名地主，由于其规则简单、娱乐性强，迅速风靡全国。"地主是一款最初流行湖北三人游戏，两个农民联合对矿一名地主，由于其规则简单、娱乐性强，迅速风靡全国。"斗地主是一款最初流行湖北三人游戏，两个农民联合...斗地主是一款最初流行湖北三人游戏，两个农民联合对抗一名地主，由于其规则简单、娱乐性强，迅速风靡全国。"地主是一款最初流行湖北三人游戏，两个农民联合对矿一名地主，由于其规则简单、娱乐性强，迅速风靡全国。"斗地主是一款最初流行湖北三人游戏，两个农民联合...
+                <i></i>
+            </div>
+        </section>
+        <section class="message">
+            <h2>信息</h2>
+            <p class="p1"><span>类型：</span><i class="buChong labelChees label_responsive_bg"></i></p>
+            <p>语言：中文</p>
+            <p>适用：Android2.3及以上</p>
+        </section>
+        <button>下载游戏(123.4M)</button>
+    </div>
+
+</div>
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/detail.js"></script>
+<script>
+    window.onload=function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction:"horizontal",/*横向滑动*/
+            loop: true,
+            //如果需要分页器
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true//修改swiper的父元素时，自动初始化swiper
+        });
+    };
+</script>
+</body>
+</html>
